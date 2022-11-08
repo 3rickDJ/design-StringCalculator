@@ -3,10 +3,7 @@ class StringCalculator
         numbers = string&.tr("\n",",")&.split(",")
         more_numbers = !string.nil? && (numbers.size > 1)
         if more_numbers
-            total = numbers.collect do |n|
-                n.to_i
-            end
-            total.sum
+            numbers.collect {|n| n.to_i }.sum
         else
             string == nil ? 0 : string.to_i
         end
