@@ -10,3 +10,9 @@ class StringCalculator
         end
     end
 end
+
+if __FILE__ == $0
+    calculator = StringCalculator.new
+    result = calculator.add("10\n20\n30")
+    p result
+end
