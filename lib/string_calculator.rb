@@ -1,11 +1,12 @@
 class StringCalculator
     def add(string)
-        more_numbers = !string.nil? && (string.split(",").size > 1 || string.split("\n").size >1)
+        numbers = string&.tr("\n",",")&.split(",")
+        more_numbers = !string.nil? && (numbers.size > 1)
         if more_numbers
-            total = string.split(",").collect do |n|
-                n.split("\n").collect {|item| item.to_i }
+            total = numbers.collect do |n|
+                n.to_i
             end
-            total.flatten.sum
+            total.sum
         else
             string == nil ? 0 : string.to_i
         end
