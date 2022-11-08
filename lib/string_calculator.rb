@@ -1,5 +1,5 @@
-class StringCalculator 
+class StringCalculator
     def add(string)
-        string == nil ? 0: string.to_i
-    end 
+        0
+    end
 end
