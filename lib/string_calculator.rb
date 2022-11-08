@@ -3,8 +3,7 @@ class StringCalculator
         if string == nil 
             0
         else
-            numbers = string&.tr("\n",",")&.split(",")
-            numbers.collect {|n| n.to_i }.sum
+            string&.tr("\n",",")&.split(",").collect {|n| n.to_i }.sum
         end
     end
 end
