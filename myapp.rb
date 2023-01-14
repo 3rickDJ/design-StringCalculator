@@ -1,5 +1,5 @@
 require 'sinatra'
 
-get '/' do
-  'Hello world!'
+get '/' do  
+  erb :index
 end
