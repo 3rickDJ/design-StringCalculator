@@ -3,7 +3,7 @@ Feature: String Calculator
 
   Scenario: Start the browser´s calculator
     Given I navigate to "localhost:4567"    
-    Then I should se a page title as "String Calculator"
+    Then I should see page title as "String Calculator"
     Then element having id "input" should be present
     Then element having id "output" should be present
 
