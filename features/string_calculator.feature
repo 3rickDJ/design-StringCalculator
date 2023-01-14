@@ -10,7 +10,11 @@ Feature: String Calculator
 
   Scenario: Passing an empty string
     Given I enter "" into input field having id "input"
-    When I click on element having id "output" should have text as "0"
+    When I click on element having id "calculate"
+    Then element having id "output" should have text as "0"
+
+    
+
  
 
 
