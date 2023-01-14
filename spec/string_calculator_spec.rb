@@ -1,4 +1,4 @@
-require "../lib/string_calculator"
+require_relative "../lib/string_calculator"
 describe StringCalculator do
     it "returns zero" do
         calculator = StringCalculator.new
